@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Fascinate+Inline&family=Orbitron:wght@800&family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;	
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Orbitron", sans-serif; */
+    margin: 0;
+    background-image: url("Roll 05.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    /* background-size: cover; */
+
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 3rem;
+}
+
+.starttitle {
+    color: #fff;
+    margin: 0px;
+    font-family: "Orbitron", sans-serif;
+    font-size: xx-large;
+    text-shadow: 2px 2px #7378c5;
+}
+
+.search {
+    background-color: #ebf1fa;
+    border: 2px solid #22254b;
+    border-radius: 10px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.search::placeholder{
+    color: #7378c5;
+}
+
+.search:focus {
+    background-color: #22254b;
+    outline: none;
+}
+
+/*  .search::before {
+    content: "\f002";
+    font-family: "FontAwesome";
+}  */
+
+i {
+    color: #fff;
+    font-size: 20px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    Background-color: rgb(10, 22, 56);
+    border-radius: 3px;
+    /* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); */
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 400px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    /* color: #eee; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin: 0;
+    font-family: "Orbitron", sans-serif;
+    text-shadow: 0.5px 0.5px #000;
+}
+
+.movie-info span {
+    /* background-color: #22254b; */
+    /* background-color: #fff; */
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+.movie-info span.green {
+    color: rgb(39, 189, 39);
+    /* font-family: "Orbitron", sans-serif; */
+    text-shadow: 1px 1px #000;
+    font-size: 20px;
+}
+
+.movie-info span.orange {
+    color: orange;
+    /* font-family: "Orbitron", sans-serif; */
+    text-shadow: 1px 1px #000;
+    font-size: 20px;
+}
+
+.movie-info span.red {
+    color: rgb(189, 42, 42);
+    /* font-family: "Orbitron", sans-serif; */
+    text-shadow: 1px 1px #000;
+    font-size: 20px;
+}
+
+.overview {
+    background-color: rgb(0, 0, 0);
+    /* background-color: rgba(0, 0, 0, 0.8);  */
+    background-color: rgba(0,0,0,0.9);
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.7s ease-in;
+color: white;
+ 
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.movie:hover .overview {
+    transform: translateY(0); 
+ 
+}
+
+.movie:hover {
+
+transition: transform 1.7s ease-in-out;
+transform: scale(1.1);
+overflow: hidden;
+/* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); */
+box-shadow: 5px 7px 7px #000;
+}
+
